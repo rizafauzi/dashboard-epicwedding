@@ -1,0 +1,47 @@
+$line: #E0E0E0;
+$card-hover: #F9F9F9;
+
+.card {
+	display: flex;
+	padding: 0px 10px;
+	flex-direction: row;
+	overflow: hidden;
+	justify-content: space-between;
+	border-bottom: solid 1px $line;
+	.cardHeader {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 10px;
+		span {
+			margin: 0px;
+			margin-right: 10px;
+		}
+		p {
+			margin: 0px;
+			color: black;
+			font-weight: 400;
+		}
+	}
+	&:hover {
+		cursor: pointer;
+		background: $card-hover;
+	}
+}
+
+.cardBody {
+	display: grid;
+	column-gap: 5px;
+	align-items: center;
+	margin-left: 50px;
+	padding: 10px 10px 10px 0px;
+	grid-template-columns: 160px auto;
+}
+
+.column {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}

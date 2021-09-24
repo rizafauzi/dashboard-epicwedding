@@ -1,0 +1,44 @@
+$primary: #F299A5;
+$primary-hover: #F88998;
+$primary-outline: #ffeaec;
+
+.outlined {
+	width: 100%;
+	outline: none;
+	padding: 0px 40px;
+	border-radius: 8px;
+	background: white;
+	border: solid 1px $primary;
+	transition: all 0.2s ease-in-out;
+	h1 {
+		color: $primary;
+		font-weight: 700;
+		font-family: 'Lato', sans-serif;
+	}
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.05);
+		background: $primary-outline;
+	}
+}
+
+.button {
+	width: 100%;
+	outline: none;
+	padding: 0px 40px;
+	border-radius: 8px;
+	background: $primary;
+	border: solid 1px transparent;
+	transition: all 0.2s ease-in-out;
+	h1 {
+		color: white;
+		font-weight: 700;
+		font-family: 'Lato', sans-serif;
+	}
+	&:hover {
+		cursor: pointer;
+		background: $primary-hover;
+		transform: scale(1.05);
+	}
+}
+

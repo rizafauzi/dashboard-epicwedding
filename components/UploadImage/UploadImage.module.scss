@@ -1,0 +1,32 @@
+
+$line: #A9A9A9;
+$hover: #FFF0F0;
+$background: #F9F9F9;
+$line-hover: #F3B6B6;
+
+.uploadContainer {
+	height: 150px;
+	width: 150px;
+	border-radius: 10px;
+	border: solid 2px $line;
+	background: $background;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease-in-out;
+	.icon {
+		margin: 0px;
+		color: $line;
+		font-size: 80px;
+		transition: all 0.2s ease-in-out;
+	}
+	&:hover {
+		cursor: pointer;
+		background: $hover;
+		border: solid 2px $line-hover;
+	}
+	&:hover > .icon {
+		color: $line-hover;
+		transform: scale(1.2);
+	}
+}

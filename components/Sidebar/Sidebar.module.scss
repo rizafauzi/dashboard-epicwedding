@@ -1,0 +1,32 @@
+$primary: #F299A5;
+$primary-hover: #F88998;
+$line: #E0E0E0;
+
+$hover: #FFF0F0;
+$line-hover: #F3B6B6;
+
+.sidebar {
+	width: 100%;
+	z-index: 10;
+	height: 100%;
+	background: white;
+	border-right: solid 1px $line;
+	.menu {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		padding: 12px 20px;
+		p {
+			color: black;
+			font-weight: 700;
+			margin: 0px 0px 0px 10px;
+		}
+		&:hover {
+			cursor: pointer;
+			background: $hover;
+		}
+		&:hover > p, &:hover > span {
+			color: $primary-hover;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+
+.wrapper {
+	border: 0;
+	width: 100%;
+	outline: none;
+	padding: 10px;
+	color: gray;
+	font-size: 16px;
+	margin-top: 5px;
+	box-shadow: none;
+	height: 45px;
+	position: relative;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background: transparent;
+	border: 1px solid #ccc;
+	font-family: 'Lato', sans-serif;
+	label {
+		font-family: 'Lato', sans-serif;
+	}
+	span {
+		left: 10px;
+		position: absolute;
+		background: pink;
+		font-family: 'Lato', sans-serif;
+	}
+	input {
+		width: 100%;
+		border: none;
+		height: 100%;
+		font-size: 16px;
+		font-family: 'Lato', sans-serif;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.errorMsg {
+	color: red;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: -12px;
+	margin-bottom: 20px;
+}
